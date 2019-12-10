@@ -1,0 +1,699 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Opération Solabiol - Plantes et Jardin</title>
+<link href='css/style.css' rel='stylesheet' type='text/css'>
+<script type="text/javascript">
+	var url_ajax_get_basket_mini_total = "/panier/ajax/total";
+	var url_ajax_get_basket_mini_products = "/panier/ajax/products";
+	var url_ajax_get_search_suggest = "/search/suggest";
+	
+	var is_gv_borne = false;
+	document.domain = "plantes-et-jardins.com";
+	var last_views_url = "/lastviews?last_ids="
+	var pj_layer_newsletter = false;
+	var url_ajax_rnvp = "/id/adresse/rnvp";
+</script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="wrapper" itemscope itemtype="http://schema.org/WebSite">
+        <div class="habillage">
+            <div class="habillage-layer" id="habillage_layer">
+                <div class="habillage-content-wrapper">
+
+<!-- ------------------------------------------------INSERTION CODE PAGE ----------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------- --> 
+<!----------------------------------------------- styles & js to include @jardi+ --------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------- --> 
+
+<link href='http://fonts.googleapis.com/css?family=Arimo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+<script>
+	jQuery.easing.jswing=jQuery.easing.swing;jQuery.extend(jQuery.easing,{def:"easeOutQuad",swing:function(e,f,a,h,g){return jQuery.easing[jQuery.easing.def](e,f,a,h,g)},easeInQuad:function(e,f,a,h,g){return h*(f/=g)*f+a},easeOutQuad:function(e,f,a,h,g){return -h*(f/=g)*(f-2)+a},easeInOutQuad:function(e,f,a,h,g){if((f/=g/2)<1){return h/2*f*f+a}return -h/2*((--f)*(f-2)-1)+a},easeInCubic:function(e,f,a,h,g){return h*(f/=g)*f*f+a},easeOutCubic:function(e,f,a,h,g){return h*((f=f/g-1)*f*f+1)+a},easeInOutCubic:function(e,f,a,h,g){if((f/=g/2)<1){return h/2*f*f*f+a}return h/2*((f-=2)*f*f+2)+a},easeInQuart:function(e,f,a,h,g){return h*(f/=g)*f*f*f+a},easeOutQuart:function(e,f,a,h,g){return -h*((f=f/g-1)*f*f*f-1)+a},easeInOutQuart:function(e,f,a,h,g){if((f/=g/2)<1){return h/2*f*f*f*f+a}return -h/2*((f-=2)*f*f*f-2)+a},easeInQuint:function(e,f,a,h,g){return h*(f/=g)*f*f*f*f+a},easeOutQuint:function(e,f,a,h,g){return h*((f=f/g-1)*f*f*f*f+1)+a},easeInOutQuint:function(e,f,a,h,g){if((f/=g/2)<1){return h/2*f*f*f*f*f+a}return h/2*((f-=2)*f*f*f*f+2)+a},easeInSine:function(e,f,a,h,g){return -h*Math.cos(f/g*(Math.PI/2))+h+a},easeOutSine:function(e,f,a,h,g){return h*Math.sin(f/g*(Math.PI/2))+a},easeInOutSine:function(e,f,a,h,g){return -h/2*(Math.cos(Math.PI*f/g)-1)+a},easeInExpo:function(e,f,a,h,g){return(f==0)?a:h*Math.pow(2,10*(f/g-1))+a},easeOutExpo:function(e,f,a,h,g){return(f==g)?a+h:h*(-Math.pow(2,-10*f/g)+1)+a},easeInOutExpo:function(e,f,a,h,g){if(f==0){return a}if(f==g){return a+h}if((f/=g/2)<1){return h/2*Math.pow(2,10*(f-1))+a}return h/2*(-Math.pow(2,-10*--f)+2)+a},easeInCirc:function(e,f,a,h,g){return -h*(Math.sqrt(1-(f/=g)*f)-1)+a},easeOutCirc:function(e,f,a,h,g){return h*Math.sqrt(1-(f=f/g-1)*f)+a},easeInOutCirc:function(e,f,a,h,g){if((f/=g/2)<1){return -h/2*(Math.sqrt(1-f*f)-1)+a}return h/2*(Math.sqrt(1-(f-=2)*f)+1)+a},easeInElastic:function(f,h,e,l,k){var i=1.70158;var j=0;var g=l;if(h==0){return e}if((h/=k)==1){return e+l}if(!j){j=k*0.3}if(g<Math.abs(l)){g=l;var i=j/4}else{var i=j/(2*Math.PI)*Math.asin(l/g)}return -(g*Math.pow(2,10*(h-=1))*Math.sin((h*k-i)*(2*Math.PI)/j))+e},easeOutElastic:function(f,h,e,l,k){var i=1.70158;var j=0;var g=l;if(h==0){return e}if((h/=k)==1){return e+l}if(!j){j=k*0.3}if(g<Math.abs(l)){g=l;var i=j/4}else{var i=j/(2*Math.PI)*Math.asin(l/g)}return g*Math.pow(2,-10*h)*Math.sin((h*k-i)*(2*Math.PI)/j)+l+e},easeInOutElastic:function(f,h,e,l,k){var i=1.70158;var j=0;var g=l;if(h==0){return e}if((h/=k/2)==2){return e+l}if(!j){j=k*(0.3*1.5)}if(g<Math.abs(l)){g=l;var i=j/4}else{var i=j/(2*Math.PI)*Math.asin(l/g)}if(h<1){return -0.5*(g*Math.pow(2,10*(h-=1))*Math.sin((h*k-i)*(2*Math.PI)/j))+e}return g*Math.pow(2,-10*(h-=1))*Math.sin((h*k-i)*(2*Math.PI)/j)*0.5+l+e},easeInBack:function(e,f,a,i,h,g){if(g==undefined){g=1.70158}return i*(f/=h)*f*((g+1)*f-g)+a},easeOutBack:function(e,f,a,i,h,g){if(g==undefined){g=1.70158}return i*((f=f/h-1)*f*((g+1)*f+g)+1)+a},easeInOutBack:function(e,f,a,i,h,g){if(g==undefined){g=1.70158}if((f/=h/2)<1){return i/2*(f*f*(((g*=(1.525))+1)*f-g))+a}return i/2*((f-=2)*f*(((g*=(1.525))+1)*f+g)+2)+a},easeInBounce:function(e,f,a,h,g){return h-jQuery.easing.easeOutBounce(e,g-f,0,h,g)+a},easeOutBounce:function(e,f,a,h,g){if((f/=g)<(1/2.75)){return h*(7.5625*f*f)+a}else{if(f<(2/2.75)){return h*(7.5625*(f-=(1.5/2.75))*f+0.75)+a}else{if(f<(2.5/2.75)){return h*(7.5625*(f-=(2.25/2.75))*f+0.9375)+a}else{return h*(7.5625*(f-=(2.625/2.75))*f+0.984375)+a}}}},easeInOutBounce:function(e,f,a,h,g){if(f<g/2){return jQuery.easing.easeInBounce(e,f*2,0,h,g)*0.5+a}return jQuery.easing.easeOutBounce(e,f*2-g,0,h,g)*0.5+h*0.5+a}});
+</script>
+<script>
+	jQuery(document).ready(function($){
+		var winW = $(window).innerWidth();
+		if ( winW > 1024 ) {
+			$window = $(window);
+			$('.parallaxbg').each(function(){
+				var $bgobj = $(this);
+				$(window).scroll(function() {
+					var yPos = -($window.scrollTop() / $bgobj.data('speed'))-$bgobj.data('positionobj'); 
+					var coords = '50% '+ yPos + 'px';
+					$bgobj.css({ backgroundPosition: coords });
+				}); 
+			});		
+			$('.parallaximg').each(function(){
+				var $imgobj = $(this);
+				$(window).scroll(function() {
+					var yPos = -($window.scrollTop() / $imgobj.data('speed'))-$imgobj.data('positionobj');  
+					var coords = '50% '+ yPos + 'px';
+					$imgobj.css({ top:yPos });
+				}); 
+			});	
+		};
+	}); 
+
+</script>
+<script>
+        $(function(){
+			
+			function startAnimation(rose, attente, DimBefore, DimAfter){
+				
+				rose.addClass("selected");
+				
+				rose.animate({
+					 height: DimBefore,
+					 width: DimBefore,
+					 top: "-" + Math.floor(DimBefore * 0.5),
+					 left: "-" + Math.floor(DimBefore * 0.5)
+				},attente);
+				
+				rose.animate({
+					height: DimAfter,
+					width: DimAfter,
+					top: "-" + Math.floor(DimAfter * 0.5),
+					left: "-" + Math.floor(DimAfter * 0.5)
+				}, {
+					duration: 500,
+					easing: 'easeOutBack'
+				});
+ 
+			}
+			function stopAnimation(rose, attente){
+				rose.animate({
+					 height: 0,
+					 width: 0,
+					 top: 0,
+					 left: 0
+					}, {
+						duration: attente,
+						easing: 'easeOutBack'
+                	}, rose.removeClass("selected")
+				);
+			}
+			function stopAnimationlegumes(rose, attente, DimAfter){
+				rose.animate({
+					/**/
+					 height: DimAfter,
+					 width: DimAfter,
+					 top: "-" + Math.floor(DimAfter * 0.5),
+					 left: "-" + Math.floor(DimAfter * 0.5)
+					}, {
+						duration: attente,
+						easing: 'easeOutBack'
+                	}
+				);
+				
+			}
+			
+			function startToutesAnimationsfleurs(){
+				startAnimation($("#rose.rose1 img"), 50, 0, 50);	
+				startAnimation($("#rose.rose2 img"), 100, 0, 50);
+				startAnimation($("#rose.rose3 img"), 100, 0, 50);
+				startAnimation($("#rose.rose4 img"), 50, 0, 50);
+				startAnimation($("#rose.rose5 img"), 0, 0, 50);
+				startAnimation($("#rose.rose6 img"), 50, 0, 50);
+				startAnimation($("#rose.rose7 img"), 400, 0, 50);
+				startAnimation($("#rose.rose8 img"), 100, 0, 50);
+				startAnimation($("#rose.rose9 img"), 0, 0, 50);
+				startAnimation($("#rose.rose10 img"), 100, 0, 50);
+				startAnimation($("#rose.rose11 img"), 250, 0, 50);
+				startAnimation($("#rose.rose12 img"), 50, 0, 50);
+				startAnimation($("#rose.rose13 img"), 20, 0, 50);
+				startAnimation($("#rose.rose14 img"), 70, 0, 50);
+				startAnimation($("#rose.rose15 img"), 0, 0, 50);
+				
+				startAnimation($("#rose.rose_rouge1 img"), 200, 0, 50);
+				startAnimation($("#rose.rose_rouge2 img"), 300, 0, 50);
+				startAnimation($("#rose.rose_rouge3 img"), 320, 0, 50);
+				startAnimation($("#rose.rose_rouge4 img"), 250, 0, 50);
+				startAnimation($("#rose.rose_rouge5 img"), 350, 0, 50);
+				startAnimation($("#rose.rose_rouge6 img"), 320, 0, 50);
+				startAnimation($("#rose.rose_rouge7 img"), 350, 0, 50);
+				startAnimation($("#rose.rose_rouge8 img"), 300, 0, 50);
+				startAnimation($("#rose.rose_rouge9 img"), 150, 0, 50);
+				startAnimation($("#rose.rose_rouge10 img"), 300, 0, 50);
+				startAnimation($("#rose.rose_rouge11 img"), 350, 0, 50);
+				startAnimation($("#rose.rose_rouge12 img"), 200, 0, 50);
+				
+				startAnimation($("#rose.geraniums1 img"), 350, 0, 50);
+				startAnimation($("#rose.geraniums2 img"), 380, 0, 50);
+				startAnimation($("#rose.geraniums3 img"), 400, 0, 50);
+				startAnimation($("#rose.geraniums4 img"), 420, 0, 50);
+				
+				startAnimation($("#rose.flou1_1 img"), 520, 0, 50);
+				startAnimation($("#rose.flou1_2 img"), 525, 0, 50);
+				startAnimation($("#rose.flou1_3 img"), 530, 0, 50);
+				startAnimation($("#rose.flou1_4 img"), 535, 0, 50);
+				startAnimation($("#rose.flou1_5 img"), 540, 0, 50);
+				startAnimation($("#rose.flou1_6 img"), 545, 0, 50);
+				startAnimation($("#rose.flou1_7 img"), 550, 0, 50);
+				startAnimation($("#rose.flou1_8 img"), 555, 0, 50);
+				
+				startAnimation($("#rose.flou2_1 img"), 520, 0, 50);
+				startAnimation($("#rose.flou2_2 img"), 525, 0, 50);
+				startAnimation($("#rose.flou2_3 img"), 530, 0, 50);
+				startAnimation($("#rose.flou2_4 img"), 535, 0, 50);
+			}
+			function startToutesAnimationslegumes(){
+				startAnimation($("#legume.salade1 img"), 100, 60, 130);
+				startAnimation($("#legume.salade2 img"), 180, 60, 130);
+				startAnimation($("#legume.salade3 img"), 220, 60, 130);
+				startAnimation($("#legume.salade4 img"), 270, 60, 130);
+				startAnimation($("#legume.salade5 img"), 280, 60, 130);
+				
+				startAnimation($("#legume.tomate1 img"), 200, 0, 35);
+				startAnimation($("#legume.tomate2 img"), 280, 0, 35);
+				startAnimation($("#legume.tomate3 img"), 320, 0, 35);
+				startAnimation($("#legume.tomate4 img"), 340, 0, 35);
+				startAnimation($("#legume.tomate5 img"), 380, 0, 35);
+				startAnimation($("#legume.tomate6 img"), 420, 0, 35);
+				startAnimation($("#legume.tomate7 img"), 480, 0, 35);
+				startAnimation($("#legume.tomate8 img"), 420, 0, 35);
+				startAnimation($("#legume.tomate9 img"), 470, 0, 35);
+				startAnimation($("#legume.tomate10 img"), 580, 0, 35);
+				startAnimation($("#legume.tomate11 img"), 500, 0, 35);
+				startAnimation($("#legume.tomate12 img"), 540, 0, 35);
+				startAnimation($("#legume.tomate13 img"), 560, 0, 35);
+				startAnimation($("#legume.tomate14 img"), 600, 0, 35);
+				startAnimation($("#legume.tomate15 img"), 580, 0, 35);
+				startAnimation($("#legume.tomate16 img"), 360, 0, 26);
+				startAnimation($("#legume.tomate17 img"), 400, 0, 30);
+				startAnimation($("#legume.tomate18 img"), 380, 0, 35);
+				startAnimation($("#legume.tomate19 img"), 380, 0, 35);
+				startAnimation($("#legume.aubergine1 img"), 200, 0, 70);
+				startAnimation($("#legume.aubergine2 img"), 200, 0, 40);
+				startAnimation($("#legume.aubergine3 img"), 300, 0, 70);
+				startAnimation($("#legume.aubergine4 img"), 400, 0, 80);
+				startAnimation($("#legume.aubergine5 img"), 450, 0, 70);
+				
+				startAnimation($("#legume.melon1 img"), 530, 0, 52);
+				startAnimation($("#legume.melon2 img"), 600, 0, 70);
+				
+			}
+			
+			function stopToutesAnimationsfleurs(){
+				stopAnimation($("#rose.rose1 img"), 200);
+				stopAnimation($("#rose.rose2 img"), 300);
+				stopAnimation($("#rose.rose3 img"), 300);
+				stopAnimation($("#rose.rose4 img"), 300);
+				stopAnimation($("#rose.rose5 img"), 300);
+				stopAnimation($("#rose.rose6 img"), 300);
+				stopAnimation($("#rose.rose7 img"), 300);
+				stopAnimation($("#rose.rose8 img"), 300);
+				stopAnimation($("#rose.rose9 img"), 300);
+				stopAnimation($("#rose.rose10 img"), 300);
+				stopAnimation($("#rose.rose11 img"), 300);
+				stopAnimation($("#rose.rose12 img"), 300);
+				stopAnimation($("#rose.rose13 img"), 300);
+				stopAnimation($("#rose.rose14 img"), 300);
+				stopAnimation($("#rose.rose15 img"), 300);
+				
+				stopAnimation($("#rose.rose_rouge1 img"), 200);	
+				stopAnimation($("#rose.rose_rouge2 img"), 300);
+				stopAnimation($("#rose.rose_rouge3 img"), 300);
+				stopAnimation($("#rose.rose_rouge4 img"), 200);
+				stopAnimation($("#rose.rose_rouge5 img"), 350);
+				stopAnimation($("#rose.rose_rouge6 img"), 320);
+				stopAnimation($("#rose.rose_rouge7 img"), 400);
+				stopAnimation($("#rose.rose_rouge8 img"), 300);
+				stopAnimation($("#rose.rose_rouge9 img"), 150);
+				stopAnimation($("#rose.rose_rouge10 img"), 300);
+				stopAnimation($("#rose.rose_rouge11 img"), 450);
+				stopAnimation($("#rose.rose_rouge12 img"), 200);
+				
+				stopAnimation($("#rose.geraniums1 img"), 200);	
+				stopAnimation($("#rose.geraniums2 img"), 300);
+				stopAnimation($("#rose.geraniums3 img"), 300);
+				stopAnimation($("#rose.geraniums4 img"), 200);
+				
+				stopAnimation($("#rose.flou1_1 img"), 300);
+				stopAnimation($("#rose.flou1_2 img"), 300);
+				stopAnimation($("#rose.flou1_3 img"), 300);
+				stopAnimation($("#rose.flou1_4 img"), 300);
+				stopAnimation($("#rose.flou1_5 img"), 300);
+				stopAnimation($("#rose.flou1_6 img"), 300);
+				stopAnimation($("#rose.flou1_7 img"), 300);
+				stopAnimation($("#rose.flou1_8 img"), 300);
+				
+				stopAnimation($("#rose.flou2_1 img"), 200);
+				stopAnimation($("#rose.flou2_2 img"), 200);
+				stopAnimation($("#rose.flou2_3 img"), 200);
+				stopAnimation($("#rose.flou2_4 img"), 200);
+			}
+			function stopToutesAnimationslegumes(){
+				stopAnimationlegumes($("#legume.salade1 img"), 200, 60);
+				stopAnimationlegumes($("#legume.salade2 img"), 200, 60);
+				stopAnimationlegumes($("#legume.salade3 img"), 200, 60);
+				stopAnimationlegumes($("#legume.salade4 img"), 200, 60);
+				stopAnimationlegumes($("#legume.salade5 img"), 200, 60);
+				
+				stopAnimationlegumes($("#legume.tomate1 img"), 200, 0);
+				stopAnimationlegumes($("#legume.tomate2 img"), 200, 0);
+				stopAnimationlegumes($("#legume.tomate3 img"), 200, 0);
+				stopAnimationlegumes($("#legume.tomate4 img"), 200, 0);
+				stopAnimationlegumes($("#legume.tomate5 img"), 200, 0);
+				stopAnimationlegumes($("#legume.tomate6 img"), 200, 0);
+				stopAnimationlegumes($("#legume.tomate7 img"), 200, 0);
+				stopAnimationlegumes($("#legume.tomate8 img"), 200, 0);
+				stopAnimationlegumes($("#legume.tomate9 img"), 200, 0);
+				stopAnimationlegumes($("#legume.tomate10 img"), 200, 0);
+				stopAnimationlegumes($("#legume.tomate11 img"), 200, 0);
+				stopAnimationlegumes($("#legume.tomate12 img"), 200, 0);
+				stopAnimationlegumes($("#legume.tomate13 img"), 200, 0);
+				stopAnimationlegumes($("#legume.tomate14 img"), 200, 0);
+				stopAnimationlegumes($("#legume.tomate15 img"), 200, 0);
+				stopAnimationlegumes($("#legume.tomate16 img"), 200, 0);
+				stopAnimationlegumes($("#legume.tomate17 img"), 200, 0);
+				stopAnimationlegumes($("#legume.tomate18 img"), 200, 0);
+				stopAnimationlegumes($("#legume.tomate19 img"), 200, 0);
+				stopAnimationlegumes($("#legume.aubergine1 img"), 200, 0);
+				stopAnimationlegumes($("#legume.aubergine2 img"), 200, 0);
+				stopAnimationlegumes($("#legume.aubergine3 img"), 200, 0);
+				stopAnimationlegumes($("#legume.aubergine4 img"), 200, 0);
+				stopAnimationlegumes($("#legume.aubergine5 img"), 200, 0);
+				stopAnimationlegumes($("#legume.melon1 img"), 200, 0);
+				stopAnimationlegumes($("#legume.melon2 img"), 200, 0);
+
+			}
+
+			startToutesAnimationsfleurs();
+			startToutesAnimationslegumes();
+
+            $("#solabiol_nav .nav1").click(function(e){
+                e.preventDefault();
+                $("#solabiol_nav a, .jardiplus_container, .jardiplus_gamme").removeClass("selected");
+				
+                $("a",this).addClass("selected");
+				$("#container_nav1, #gamme_nav1").addClass("selected");
+                
+				stopToutesAnimationsfleurs();
+				startToutesAnimationslegumes();
+            });
+			
+            $("#solabiol_nav .nav2").click(function(e){
+                e.preventDefault();
+                $("#solabiol_nav a, .jardiplus_container, .jardiplus_gamme").removeClass("selected");
+				
+                $("a",this).addClass("selected");
+				$("#container_nav2, #gamme_nav2").addClass("selected");
+				
+				startToutesAnimationsfleurs();
+				startToutesAnimationslegumes();
+            });
+			
+            $("#solabiol_nav .nav3").click(function(e){
+                e.preventDefault();
+                $("#solabiol_nav a, .jardiplus_container, .jardiplus_gamme").removeClass("selected");
+
+                $("a",this).addClass("selected");
+				$("#container_nav3, #gamme_nav3").addClass("selected");
+				
+				startToutesAnimationsfleurs();
+				stopToutesAnimationslegumes();
+            })
+        })		
+</script>
+<script>
+
+	function scrolled(){
+		var header = document.querySelector("#solabiol_nav");
+		var	positionYmenu = 282,
+			finvisibleYmenu = 1115,
+			currentScroll = document.body.scrollTop;
+		if (currentScroll >= finvisibleYmenu){
+			header.className = (currentScroll >= finvisibleYmenu) ? "trop-bas-absolute" : "fixed";
+		}	else{
+			header.className = (currentScroll >= positionYmenu) ? "fixed" : "absolute";
+		}
+	}
+	
+	addEventListener("scroll", scrolled, false);
+</script>
+<!----------------------------------------------------------------------------------------------------------------------------- --> 
+    <div class="selection" >      
+        <div class="left_col">
+<!-- ------------------------------------------------MINI SITE SOLABIOL ----------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------- -->
+
+<!-- ----------------------------------------------------- Header ---------------------------------------------------------->   
+            <div id="solabiol_minisite">
+                <div id="solabiol-accroche">
+                    <h1><a>Jardinez</a> au <a>Naturel</a> avec</h1>
+                    <div id="solabiol_logo"><img src="images/solabiol_logo.jpg" border="0" /></div>
+                </div>
+<!-- ----------------------------------------------------------------------------------------------------------------------------
+ ----------------------------------------------------- SLIDE ------------------------------------------------------------------>   
+  
+                <div id="solabiol_slide">
+                	
+                    <div id="background-dessin-gauche1" >
+                    </div>
+                    <div id="background-dessin-gauche2" >
+                        <div id="legume" class="selected aubergine1"><img src="images/aubergine_1.png" border="0"/></div>
+                        <div id="legume" class="selected aubergine2"><img src="images/aubergine_1.png" border="0"/></div>
+                        <div id="legume" class="selected aubergine3"><img src="images/aubergine_1.png" border="0"/></div>
+                        <div id="legume" class="selected aubergine4"><img src="images/aubergine_1.png" border="0"/></div>
+                        <div id="legume" class="selected aubergine5"><img src="images/aubergine_1.png" border="0"/></div>
+                    </div>
+                    <div id="background-dessin-gauche3" >
+                        <div id="legume" class="selected tomate1"><img src="images/tomate_1.png" border="0"/></div>
+                        <div id="legume" class="selected tomate2"><img src="images/tomate_2.png" border="0"/></div>
+                        <div id="legume" class="selected tomate3"><img src="images/tomate_3.png" border="0"/></div>
+                        <div id="legume" class="selected tomate4"><img src="images/tomate_4.png" border="0"/></div>
+                        <div id="legume" class="selected tomate5"><img src="images/tomate_5.png" border="0"/></div>
+                        <div id="legume" class="selected tomate6"><img src="images/tomate_6.png" border="0"/></div>
+                        <div id="legume" class="selected tomate7"><img src="images/tomate_7.png" border="0"/></div>
+                        <div id="legume" class="selected tomate9"><img src="images/tomate_9.png" border="0"/></div>
+                        <div id="legume" class="selected tomate8"><img src="images/tomate_8.png" border="0"/></div>
+                        <div id="legume" class="selected tomate10"><img src="images/tomate_10.png" border="0"/></div>
+                        <div id="legume" class="selected tomate11"><img src="images/tomate_11.png" border="0"/></div>
+                        <div id="legume" class="selected tomate12"><img src="images/tomate_12.png" border="0"/></div>
+                        <div id="legume" class="selected tomate15"><img src="images/tomate_9.png" border="0"/></div>
+                        <div id="legume" class="selected tomate13"><img src="images/tomate_13.png" border="0"/></div>
+                        <div id="legume" class="selected tomate14"><img src="images/tomate_14.png" border="0"/></div>
+                        <div id="legume" class="selected tomate16"><img src="images/tomate_6.png" border="0"/></div>
+                        <div id="legume" class="selected tomate17"><img src="images/tomate_8.png" border="0"/></div>
+                        <div id="legume" class="selected tomate18"><img src="images/tomate_14.png" border="0"/></div>
+                        <div id="legume" class="selected tomate19"><img src="images/tomate_9.png" border="0"/></div>
+                        
+                        <div id="legume" class="selected melon1"><img src="images/melon_1.png" border="0"/></div>
+                        
+                    </div>
+                    <div id="background-dessin-gauche4" >
+                     <div id="legume" class="selected melon2"><img src="images/melon_1.png" border="0"/></div>
+                    </div>
+                    <div id="background-dessin-gauche" >
+                        <div id="legume" class="selected salade4"><img src="images/salade_4.png" border="0"/></div>
+                        <div id="legume" class="selected salade3"><img src="images/salade_3.png" border="0"/></div>
+                        <div id="legume" class="selected salade5"><img src="images/salade_4.png" border="0"/></div>
+                        <div id="legume" class="selected salade2"><img src="images/salade_2.png" border="0"/></div>
+                        <div id="legume" class="selected salade1"><img src="images/salade_1.png" border="0"/></div>
+                        
+                    </div>
+                    
+                	<div id="background-dessin-droite1" >
+                    </div>
+                    <div id="background-dessin-droite2" >
+                    </div>
+        			<div id="background-dessin-droite2" >
+                        
+                        <div id="rose" class="selected rose1"><img src="images/rose_1.png" border="0"/></div>
+                        <div id="rose" class="selected rose2"><img src="images/rose_2.png" border="0"/></div>
+                        <div id="rose" class="selected rose3"><img src="images/rose_3.png" border="0"/></div>
+                        <div id="rose" class="selected rose4"><img src="images/rose_2.png" border="0"/></div>
+                        <div id="rose" class="selected rose5"><img src="images/rose_4.png" border="0"/></div>
+                        <div id="rose" class="selected rose6"><img src="images/rose_5.png" border="0"/></div>
+                        <div id="rose" class="selected rose7"><img src="images/rose_6.png" border="0"/></div>
+                        <div id="rose" class="selected rose8"><img src="images/rose_7.png" border="0"/></div>
+                        <div id="rose" class="selected rose9"><img src="images/rose_8.png" border="0"/></div>
+                        <div id="rose" class="selected rose11"><img src="images/rose_10.png" border="0"/></div>
+                        <div id="rose" class="selected rose10"><img src="images/rose_9.png" border="0"/></div>
+                        <div id="rose" class="selected rose13"><img src="images/rose_12.png" border="0"/></div>
+                        <div id="rose" class="selected rose12"><img src="images/rose_11.png" border="0"/></div>
+                        <div id="rose" class="selected rose14"><img src="images/rose_13.png" border="0"/></div>
+                        <div id="rose" class="selected rose15"><img src="images/rose_14.png" border="0"/></div>
+                        
+                        <div id="rose" class="selected rose_rouge12"><img src="images/rose_rouge_12.png" border="0"/></div>
+                        <div id="rose" class="selected rose_rouge1"><img src="images/rose_rouge_1.png" border="0"/></div>
+                        <div id="rose" class="selected rose_rouge2"><img src="images/rose_rouge_2.png" border="0"/></div>
+                        <div id="rose" class="selected rose_rouge3"><img src="images/rose_rouge_3.png" border="0"/></div>
+                        <div id="rose" class="selected rose_rouge4"><img src="images/rose_rouge_4.png" border="0"/></div>
+                        <div id="rose" class="selected rose_rouge6"><img src="images/rose_rouge_6.png" border="0"/></div>
+                        <div id="rose" class="selected rose_rouge5"><img src="images/rose_rouge_5.png" border="0"/></div>
+                        <div id="rose" class="selected rose_rouge7"><img src="images/rose_rouge_7.png" border="0"/></div>
+                        <div id="rose" class="selected rose_rouge8"><img src="images/rose_rouge_8.png" border="0"/></div>
+                        <div id="rose" class="selected rose_rouge9"><img src="images/rose_rouge_9.png" border="0"/></div>
+                        <div id="rose" class="selected rose_rouge10"><img src="images/rose_rouge_10.png" border="0"/></div>
+                        <div id="rose" class="selected rose_rouge11"><img src="images/rose_rouge_11.png" border="0"/></div>
+                    
+                    </div>
+                     <div id="background-dessin-droite3" >
+                    </div>
+        			<div id="background-dessin-droite" >
+                         <div id="rose" class="selected flou2_2"><img src="images/flou_2.png" border="0"/></div>
+                        
+                        <div id="rose" class="selected flou1_1"><img src="images/flou_1.png" border="0"/></div>
+                        <div id="rose" class="selected flou1_2"><img src="images/flou_1.png" border="0"/></div>
+                        <div id="rose" class="selected flou1_3"><img src="images/flou_1.png" border="0"/></div>
+                        <div id="rose" class="selected flou1_4"><img src="images/flou_1.png" border="0"/></div>
+                        <div id="rose" class="selected flou1_5"><img src="images/flou_1.png" border="0"/></div>
+                        <div id="rose" class="selected flou1_6"><img src="images/flou_1.png" border="0"/></div>
+                        <div id="rose" class="selected flou1_7"><img src="images/flou_1.png" border="0"/></div>
+                        <div id="rose" class="selected flou1_8"><img src="images/flou_1.png" border="0"/></div>
+                        
+                        <div id="rose" class="selected flou2_1"><img src="images/flou_2.png" border="0"/></div>
+                        <div id="rose" class="selected flou2_3"><img src="images/flou_2.png" border="0"/></div>
+                        <div id="rose" class="selected flou2_4"><img src="images/flou_2.png" border="0"/></div>
+                        
+                        <div id="rose" class="selected geraniums1"><img src="images/geraniums_1.png" border="0"/></div>
+                        <div id="rose" class="selected geraniums2"><img src="images/geraniums_2.png" border="0"/></div>
+                        <div id="rose" class="selected geraniums3"><img src="images/geraniums_3.png" border="0"/></div>
+                        <div id="rose" class="selected geraniums4"><img src="images/geraniums_4.png" border="0"/></div>
+                        
+                    </div>
+<!-- --------------------------------------------------- Navigation ---------------------------------------------------------->
+                    <div id="solabiol_nav" class="absolute">
+                        <div id="solabiol_header-left">
+                            <span class="background"></span>
+                        </div>
+                        <div id="solabiol_header-right">
+                            <span class="background"></span>
+                        </div>
+                        <div id="solabiol_header-bar">  
+                            <nav>
+                                <ul>
+                                    <li class="nav1"><a href="#">Potager</a></li>
+                                    <li class="nav2"><a href="#" class="selected">Universel</a></li>
+                                    <li class="nav3"><a href="#">Ornement</a></li>
+                                </ul>
+                            </nav>
+                            <span class="background"></span>
+                        </div>    
+                    </div>
+<!-- ------------------------------------------------- Contenu NAV 1 ENGRAIS LÉGUMES ---------------------------------------------------------->
+                    <div id="container_nav1" class="jardiplus_container">
+                        <div class="prod_featured_img"><img src="images/sotom15.jpg" border="0" /></div>
+                        <div class="prod_featured_desc">
+                            <div class="title">Engrais  Tomates</br><a>et légumes fruits 1,5 kg</a></div>
+                            <div class="bloc_texte">
+                            	Faites le choix d'une fertilisation 100% naturelle, 100% bio,</br>100% organique pour LE légume incontournable du jardin !
+                            </div>
+                        </div>
+                        <div class="prod_featured_bouton">
+                            	<a class="bouton_savplus" href="http://www.plantes-et-jardins.com/p/34574-engrais-bio-tomates-15-kg-solabiol?ref=1360-2_3921-2_4023-3"><div class="savoir_plus">En savoir plus</div></a>
+                            </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    
+<!-- -------------------------------- Contenu NAV 1 gamme ---------------------------------------->
+                    <div id="gamme_nav1" class="jardiplus_gamme">
+                        <h2>Découvrez nos <a>engrais potagers</a></h2>
+					   <div class="flexOpSolabiolGamme">
+							<div class="gamme gamme_gauche">
+								<div class="gamme_featured_img"><img src="images/sotom15.jpg" border="0" /></div>
+								<div class="gamme_featured_desc">
+									<div class="title">Engrais  Tomates </br>et légumes fruits 1,5kg</div>
+									<div class="bloc_texte">
+										<ul>
+											<li>Cet engrais fertilise toutes les variétés de tomates, courgettes, potirons, aubergines, poivrons…</li>
+											<li>Double action : il nourrit la plante en profondeur et améliore le sol.</li>
+											<li>Il favorise un enracinement rapide, une fructification généreuse, de meilleures qualités nutritionnelles et gustatives.</li>
+											<li>Action longue durée : 2 apports suffisent pour toute la saison.</li>
+										</ul>
+									</div>
+									<a class="bouton_savplus" href="http://www.plantes-et-jardins.com/p/34574-engrais-bio-tomates-15-kg-solabiol?ref=1360-2_3921-2_4023-3"><div class="savoir_plus">En savoir plus</div></a>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="gamme gamme_droite">
+								<div class="gamme_featured_img"><img src="images/socorn750.jpg" border="0" /></div>
+								<div class="gamme_featured_desc">
+									<div class="title">Corne fine traditionnelle 750g</div>
+									<div class="bloc_texte">
+										<ul>
+											<li>Engrais traditionnel du jardinage biologique.</li>
+											<li>Composition : 100% corne pour une libération rapide de l'azote.</li>
+											<li>Idéal pour les travaux de plantations et d'entretien.</li>
+											<li>Action longue durée exerçant une action sur la couleur du feuillage et le développement du végétal.</li>
+											<li>Économique : 25% offerts !</li>
+
+										</ul>
+									</div>
+									<a class="bouton_savplus" href="http://www.plantes-et-jardins.com/p/34574-engrais-bio-tomates-15-kg-solabiol?ref=1360-2_3921-2_4023-3"><div class="savoir_plus">En savoir plus</div></a>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+              		</div>
+<!-- ------------------------------------------------- Contenu NAV 2 ENGRAIS COMPLET ---------------------------------------------------------->              
+                    <div id="container_nav2" class="jardiplus_container selected">
+                        <div class="prod_featured_img"><img src="images/solicomp800p.jpg" border="0" /></div>
+                        <div class="prod_featured_desc">
+                            <div class="title">Engrais liquide complet</br><a>800ml + 200ml offerts</a></div>
+                            <div class="bloc_texte">
+                                Découvrez le dernier né de la gamme Solabiol : l'engrais liquide complet, idéal pour fertiliser toutes les plantes de votre jardin !
+                            </div>
+                        </div>
+                        <div class="prod_featured_bouton">
+                            	<a class="bouton_savplus" href=""><div class="savoir_plus">En savoir plus</div></a>
+                            </div>
+                        <div class="clearfix"></div>
+                    </div>
+<!-- -------------------------------- Contenu NAV 2 gamme ---------------------------------------->
+                    <div id="gamme_nav2" class="jardiplus_gamme selected">
+						<h2>Découvrez nos <a>engrais universels</a></h2>
+						<div class="flexOpSolabiolGamme">
+							<div class="gamme gamme_gauche">
+								<div class="gamme_featured_img"><img src="images/solicomp800p.jpg" border="0" /></div>
+								<div class="gamme_featured_desc">
+									<div class="title">Engrais liquide complet </br>800ml + 200ml offerts</div>
+									<div class="bloc_texte">
+									<ul>
+											<li>Cet engrais apporte les éléments nutritifs essentiels au développement des plantes de votre jardin.</li>
+											<li>Il est adapté à toutes les cultures, qu'elles soient en pot ou en pleine terre.</li>
+											<li>Formulation 100% naturelle.</li>
+											<li>Economique : 200ml offerts !</li>
+										</ul>
+									</div>
+									<a class="bouton_savplus" href=""><div class="savoir_plus">En savoir plus</div></a>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							
+							<div class="gamme gamme_droite">
+								<div class="gamme_featured_img"><img src="images/soconat1p.jpg" border="0" /></div>
+								<div class="gamme_featured_desc">
+									<div class="title">Engrais complet 1kg + 500g offerts</div>
+									<div class="bloc_texte">
+									<ul>
+											<li>Cet engrais répond aux besoins nutritifs de toutes les cultures du jardin grâce à sa formule équilibré en azote, phosphore et potasse.</li>
+											<li>Utilisable dès la préparation des terrains pour un effet starter et durable.</li>
+											<li>Nourrit vos plantes pendant 3 mois.</li>
+											<li>Economique : 500g offerts !</li>
+										</ul>
+									</div>
+									<a class="bouton_savplus" href="http://www.plantes-et-jardins.com/p/34572-engrais-complet-bio-1-kg-500-g-offerts-solabiol?ref=1360-2_3921-2_4023-3"><div class="savoir_plus">En savoir plus</div></a>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+                    </div>
+<!-- ------------------------------------------------- Contenu NAV 3 soigner ---------------------------------------------------------->                
+                    <div id="container_nav3" class="jardiplus_container">
+                        <div class="prod_featured_img"><img src="images/soros750n.jpg" border="0" /></div>
+                        <div class="prod_featured_desc">
+                            <div class="title">Engrais Rosiers </br><a>et arbustes à fleurs 750g</a></div>
+                            <div class="bloc_texte">
+                                Découvrez notre solution de nutrition 100% biologique pour la variété star de votre jardin : le rosier !
+                            </div>
+                        </div>
+                        <div class="prod_featured_bouton">
+                            	<a class="bouton_savplus" href=""><div class="savoir_plus">En savoir plus</div></a>
+                            </div>
+                        <div class="clearfix"></div>
+                    </div>
+<!-- -------------------------------- Contenu NAV 3 gamme ---------------------------------------->
+                    <div id="gamme_nav3" class="jardiplus_gamme">
+						<h2>Découvrez nos <a>engrais ornements</a></h2>
+						<div class="flexOpSolabiolGamme">
+							<div class="gamme gamme_gauche">
+								<div class="gamme_featured_img"><img src="images/soros750n.jpg" border="0" /></div>
+								<div class="gamme_featured_desc">
+									<div class="title">Engrais Rosiers </br>et arbustes à fleurs 750g</div>
+									<div class="bloc_texte">
+									<ul>
+											<li>Engrais composé à partir de matières premières 100% naturelles.</li>
+											<li>Il est adapté aux besoins des toutes les variétés de rosiers et arbustes à fleurs.</li>
+											<li>Bien équilibré en azote, phosphore et potasse, il bonifie le sol et nourrit la plante en profondeur pour un feuillage bien vert et une floraison éclatante.</li>
+											<li>Action longue durée : 2 apports suffisent pour toute la saison.</li>
+										</ul>
+									</div>
+									<a class="bouton_savplus" href=""><div class="savoir_plus">En savoir plus</div></a>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							
+							<div class="gamme gamme_droite">
+								<div class="gamme_featured_img"><img src="images/soger750n.jpg" border="0" /></div>
+								<div class="gamme_featured_desc">
+									<div class="title">Engrais Géraniums </br>et plantes fleuries 750g</div>
+									<div class="bloc_texte">
+									<ul>
+											<li>Engrais composé à partir de matières premières 100% naturelles.</li>
+											<li>Il est adapté aux besoins des toutes les variétés de géraniums et autres plantes fleuries.</li>
+											<li>Il est idéal à la plantation pour les balconnières.</li>
+											<li>Il prolonge la durée de floraison et renforce la couleur de vos fleurs.</li>
+											<li>Action longue durée : 2 apports suffisent pour toute la saison.</li>
+										</ul>
+									</div>
+									<a class="bouton_savplus" href=""><div class="savoir_plus">En savoir plus</div></a>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+					</div>
+                </div>  
+<!--===================================================== BANDEAU TERRE ====================================================-->
+
+    <section id="bandeau-terre" class="home-section homepagesections-about-me parallaxbg" data-speed="-5" data-type="background" data-positionobj="900">	
+    <div id="ombre-haut" class="pixel-ombre">
+    </div>
+    <div id="ombre-bas" class="pixel-ombre">
+    </div>
+    </section>
+                
+<!-- ----------------------------------------------------------------------------------------------------------------------------
+ ----------------------------------------------------- GAMME SOLABIOL ------------------------------------------------------------------->                  
+                <h2>Découvrez notre <a>gamme complète</a></h2>
+                
+                <a href="http://www.plantes-et-jardins.com/cat3/4023?ref=1360-2_3921-2">
+                    <div id="solabiol_slide_green">
+                        <div id="fleche_slide_green"><img src="images/fleche_slide.png" border="0" /></div>
+                        <div id="gamme_complete"><img src="images/gamme_complete.jpg" border="0" /></div>
+                        <div class="texte_gamme_complete" style="left:48px;">Insecticides, fongicides</div>
+                        <div class="texte_gamme_complete" style="left:260px;">Stimulateur racinaire</div>
+                        <div class="texte_gamme_complete" style="left:455px;">Engrais</div>
+                        <div class="texte_gamme_complete" style="left:710px;">Les traditionnels</div>
+                    </div>
+                </a>
+                <a href="http://www.solabiol.com/">
+                    <div id="banniere_internet" class="parallaxbg" data-speed="-20" data-type="background" data-positionobj="830">
+                    	<img src="images/banniere_internet_plan1.png" border="0" />
+                    </div>
+                </a>
+            </div>
+    </div>
+    <div class="clearfix"></div>
+<!----------------------------------------------------------------------------------------------------------------------------- --> 
+<!----------------------------------------------------------------------------------------------------------------------------- --> 
+</div>
+	            
+                </div>
+            </div>
+        </div>
+	</div>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-166646-1']);
+  _gaq.push(['_setDomainName', '.plantes-et-jardins.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>

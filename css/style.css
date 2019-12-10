@@ -1,0 +1,575 @@
+
+.selection>.left_col{width:993px;margin:0 auto;padding:1px}
+#solabiol_minisite{position:relative;height:1680px;padding-top:1px;margin:0px 1px;background-color:#fff}
+#solabiol_minisite a{text-transform: none;text-decoration:none}
+/* ------------------------------------------------------------------------------------------
+--------------------------------------- FONT ----------------------------------------------*/   
+@font-face {font-family: 'helvetica_light';src: url('css/fonts/HelveticaLight.ttf')}
+#solabiol_minisite h1, #solabiol_minisite h2, #solabiol_minisite h3{font-family:'helvetica_light', 'Arimo', sans-serif;font-weight: 400;font-style: italic;text-transform: none;text-decoration:none;border:none}
+#solabiol_minisite h1 a, #solabiol_minisite h2 a, #solabiol_minisite h3 a{font-family: 'Arimo', sans-serif;font-weight: 700;font-style: italic;text-transform: none;text-decoration:none}
+#solabiol-accroche, #solabiol_slide{display:inline-block}
+#solabiol-accroche {height:90px}
+#solabiol_minisite h1{font-size:48px;color:#007735;padding-left: 50px;margin: 10px 20px 15px 20px}
+#solabiol_minisite h1 a{font-size:56px;color:#007735}
+#solabiol_minisite h2{
+	font-size:32px;
+	color:#007735;
+	text-align:center;
+	margin-top:20px;
+}
+#solabiol_minisite h2 a{
+	font-size:34px;
+	color:#007735;
+}	
+#solabiol_minisite .texte_gamme_complete{
+	font-family: 'Arimo', sans-serif;
+	font-weight: 700;
+	font-size:16px;
+	text-align:center;
+	text-transform: none;
+	text-decoration:none;
+	color:#613738;
+	position:absolute;
+	vertical-align:bottom;
+	width:200px;
+	height:30px;
+	top:210px;
+	z-index:999; 
+}
+#solabiol_logo{
+	position:absolute;
+	top: 0px;
+	right:80px;
+	margin:15px 0px;
+}
+#fleche_slide_green{
+	position:absolute;
+	right:380px;
+	top:0px;
+	z-index:999;
+}
+#tomates_gauche{
+	position:absolute;
+	left:0px;
+	top:70px;
+	z-index:999;
+}
+#tomates_droite{
+	position:absolute;
+	right:0px;
+	top:52px;
+	z-index:999;
+}
+#texture_terre{
+	position:relative;
+	top:0px;
+}
+#gamme_complete{
+	position: relative;
+	width: 899px;
+	top: 37px;
+	margin: auto;
+	z-index: 999;
+}
+/* --------------------------------------------------------------------------------------------------
+---------------------------------------- SLIDE -------------------------------------------------- */
+#solabiol_slide{
+	font-family:'Arimo', sans-serif;
+	position:relative;
+	width:991px;
+	background-color:#ffefdc;
+}
+#solabiol_slide h2{
+	background:#FFF;
+	padding: 8px 0px;
+	margin: auto;
+	text-align:center;
+}
+#solabiol_slide_green{
+	font-family:'Arimo', sans-serif;
+	position:relative;
+	margin-top:30px;
+	height:250px;
+	background-color:#ffefdc;
+}
+/*==================================== ROSES ==========================================*/
+#rose, #legume{
+	display:none;
+	position:absolute;
+}
+#rose.selected{
+	display:block;
+	width:50px;
+	height:50px;
+}
+#legume.selected {
+	display:block;
+	width:130px;
+	height:130px;
+}
+#rose img{
+	position:absolute;
+	width:0px;
+	height:0px;
+}
+#legume img{
+	position:absolute;
+	width:60px;
+	height:60px;
+}
+#rose.geraniums1, #rose.geraniums2, #rose.geraniums3, #rose.geraniums4 {
+	visibility:hidden;
+}
+.rose1{top:165px;right:105px}
+.rose2{top:200px;right:115px}
+.rose3{top:110px;right:95px}
+.rose4{top:105px;right:70px}
+.rose5{top:125px;right:5px}
+.rose6{top:225px;right:75px}
+.rose7{top:195px;right:140px}
+.rose8{top:70px;right:95px}
+.rose9{top:65px;right:65px}
+.rose10{top:55px;right:5px}
+.rose11{top:52px;right:-20px}
+.rose12{top:80px;right:-35px}
+.rose13{top:60px;right:-45px}
+.rose14{top:150px;right:25px}
+.rose15{top:205px;right:5px}
+.rose_rouge1{top:325px;right:75px}
+.rose_rouge2{top:343px;right:165px}
+.rose_rouge3{top:413px;right:155px}
+.rose_rouge4{top:375px;right:80px}
+.rose_rouge5{top:345px;right:120px}
+.rose_rouge6{top:315px;right:125px}
+.rose_rouge7{top:325px;right:100px}
+.rose_rouge8{top:410px;right:115px}
+.rose_rouge9{top:370px;right:170px}
+.rose_rouge10{top:350px;right:85px}
+.rose_rouge11{top:395px;right:135px}
+.rose_rouge12{top:360px;right:190px}
+.geraniums1{top:230px;right:180px}
+.geraniums2{top:265px;right:185px}
+.geraniums3{top:290px;right:255px}
+.geraniums4{top:240px;right:140px}
+.flou1_1{top:160px;right:185px}
+.flou1_2{top:160px;right:160px}
+.flou1_3{top:175px;right:195px}
+.flou1_4{top:210px;right:200px}
+.flou1_5{top:225px;right:188px}
+.flou1_6{top:200px;right:220px}
+.flou1_7{top:215px;right:240px}
+.flou1_8{top:230px;right:245px}
+.flou2_1{top:170px;right:160px}
+.flou2_2{top:165px;right:200px}
+.flou2_3{top:185px;right:175px}
+.flou2_4{top:215px;right:190px}
+.salade1{top:530px;left:30px}
+.salade2{top:475px;left:70px}
+.salade3{top:425px;left:120px}
+.salade4{top:415px;left:40px}
+.salade5{top:460px;left:-10px}
+.tomate1{top:154px;left:223px}
+.tomate2{top:163px;left:223px}
+.tomate3{top:150px;left:210px}
+.tomate4{top:215px;left:60px}
+.tomate5{top:234px;left:50px}
+.tomate6{top:235px;left:70px}
+.tomate7{top:224px;left:140px}
+.tomate8{top:240px;left:130px}
+.tomate9{top:230px;left:120px}
+.tomate10{top:210px;left:120px}
+.tomate11{top:225px;left:170px}
+.tomate12{top:247px;left:197px}
+.tomate13{top:226px;left:193px}
+.tomate14{top:242px;left:177px}
+.tomate15{top:259px;left:180px}
+.tomate16{top:175px;left:47px}
+.tomate17{top:164px;left:28px}
+.tomate18{top:155px;left:40px}
+.tomate19{top:169px;left:125px}
+.aubergine1{top:169px;left:305px}
+.aubergine2{top:209px;left:265px}
+.aubergine3{top:155px;left:170px}
+.aubergine4{top:190px;left:75px}
+.aubergine5{top:242px;left:155px}
+.melon1{top:332px;left:120px}
+.melon2{top:400px;left:169px}
+/*====================================background-dessin==================================*/
+#background-dessin-gauche, #background-dessin-gauche1, #background-dessin-gauche2, #background-dessin-gauche3, #background-dessin-gauche4, #background-dessin-droite, #background-dessin-droite1, #background-dessin-droite2, #background-dessin-droite3, #background-dessin-droite3 img, #banniere_internet{
+	top:0px;
+	height:662px;
+	overflow: hidden;
+	background-position: center;
+	background-repeat: repeat;
+}
+#background-dessin-gauche, #background-dessin-gauche1, #background-dessin-gauche2, #background-dessin-gauche3, #background-dessin-gauche4 {
+	position:absolute;
+	width:355px;
+}
+#background-dessin-gauche1{
+	background-image: url(../images/background-dessin-gauche-1.png);
+}
+#background-dessin-gauche2{
+	background-image: url(../images/background-dessin-gauche-2.png);
+}
+#background-dessin-gauche3{
+	background-image: url(../images/background-dessin-gauche-3.png);
+}
+#background-dessin-gauche4{
+	background-image: url(../images/background-dessin-gauche-4.png);
+}
+#background-dessin-droite, #background-dessin-droite1, #background-dessin-droite2, #background-dessin-droite3, #background-dessin-droite3 img{
+	position:absolute;
+	width:360px;
+	right:0px;
+}
+#background-dessin-droite3{
+	background-image: url(../images/background-dessin-droite3-sans.jpg);
+	/**/height:355px !important;
+}
+#background-dessin-droite3 img{
+	position:relative;
+}
+#background-dessin-droite2{
+	z-index:900;
+	background-image: url(../images/background-dessin-droite21-sans.png);
+}
+#background-dessin-droite1{
+	z-index:995;
+	background-image: url(../images/background-dessin-droite1.png);
+}
+#container_nav2{
+	z-index:999 !important;
+}
+#banniere_internet{
+	height:184px;
+	margin-top:10px;
+	background-image: url(../images/banniere_internet_plan2.jpg);
+}
+/* --------------------------- Menu Nav ------------------------------------ */
+#solabiol_nav{
+	z-index:1000;
+	width:991px;
+	height:40px;
+	overflow:hidden;
+}
+#solabiol_nav.absolute{
+	position:absolute;
+}
+#solabiol_nav.fixed{
+	position: fixed;
+	top: 0;
+	margin-top: 0;
+	height:30px;
+	
+	border-bottom: #ffdcc1 solid 1px;
+}
+#solabiol_nav.trop-bas-absolute{
+	position:absolute;
+	top: 830px;
+	height:30px;
+}
+#solabiol_nav.fixed ul li a{
+	margin-top:5px;
+}
+#solabiol_nav.fixed ul li.nav1 a.selected,#solabiol_nav.fixed ul li.nav2 a.selected,#solabiol_nav.fixed ul li.nav3 a.selected{
+	margin-top:2px;
+}
+#solabiol_header-left,#solabiol_header-right{
+	position:absolute;
+	top:0;
+	width:100%;
+	height:40px;
+}
+#header-left .background,#header-right .background{
+	display:block;
+	height:100%;
+	width:100%;
+	background:#ffefdc;
+}
+#solabiol_header-left{
+	margin-left:-50%;
+}
+#solabiol_header-right{
+	margin-left:50%;
+}		
+#solabiol_header-bar{
+	position:relative;
+	height:100%;
+	width:991px;
+	overflow:hidden;
+	margin:0 auto;
+	display:block
+}
+#solabiol_header-bar .background{
+	display:block;
+	height:100%;
+	width:100%;
+	background:#ffefdc;
+}	
+#solabiol_header-bar nav{
+	position:absolute;
+	height:40px;
+	top:0;
+	width: 390px;
+	margin-left: -195px;
+	left: 50%;
+}		
+#solabiol_nav ul{
+	list-style-type:none;
+	margin:0 auto;
+	text-align:center;
+	width:400px;
+}
+#solabiol_nav ul li a{
+	display:block;
+	float:left;
+	height:30px;
+	margin:10px 10px 15px 10px;
+	font-family:'Arimo', sans-serif;
+	font-weight:400;
+	color:#cd5014;
+	text-transform:uppercase;
+	text-decoration:none;
+	font-size:18px;
+}
+#solabiol_nav ul li.nav1 a:hover,#solabiol_nav ul li.nav1 a.selected,#solabiol_nav ul li.nav2 a:hover,#solabiol_nav ul li.nav2 a.selected,#solabiol_nav ul li.nav3 a:hover,#solabiol_nav ul li.nav3 a.selected{
+	font-weight:700;
+	color:#613738;
+}
+#solabiol_nav ul li.nav1 a.selected,#solabiol_nav ul li.nav2 a.selected,#solabiol_nav ul li.nav3 a.selected{
+	font-size:22px;
+	margin:7px 10px 15px 10px;
+}
+/* --------------------------- gamme spécifique ------------------------------------ */
+#gamme_nav1 ul, #gamme_nav2 ul, #gamme_nav3 ul{
+	padding-left:15px;
+}
+.jardiplus_gamme{
+	display:none;
+	width:991px;
+	margin:auto;
+}
+.jardiplus_gamme.selected{
+	display:block;
+}
+.gamme_featured_img, .gamme_featured_desc{
+	display:inherit;
+}
+
+.gamme_featured_img img{
+   width:150px;
+}
+.gamme_featured_desc{
+	vertical-align:top;
+	width:275px;
+	margin:0;
+}
+.jardiplus_gamme .title,.jardiplus_gamme .title a{
+	font-family:'Arimo', sans-serif;
+	font-weight:700;
+	font-size:15px;
+	text-decoration:none;
+	color:#613738;
+	margin-bottom:5px;
+}
+.jardiplus_gamme .bloc_texte{
+	height: 115px;
+	overflow: hidden;
+	font-family:'Arimo', sans-serif;
+	font-weight:400;
+	font-size:11px;
+	text-decoration:none;
+	text-align: justify;
+	color:#3d251d;
+}
+.jardiplus_gamme .bouton_savplus{
+	position: absolute;
+	width:100px;
+	height:15px;
+	bottom: 25px;
+	padding:5px;
+	margin:10px auto 0px auto;
+	background: #da5b1f;
+	color: #fff;
+	text-decoration:none;
+	text-transform: none;
+	text-align:center;
+	font-family:'Arimo', sans-serif;
+	font-size:13px;
+	font-weight:700;
+	display:inline-block;*display:inline;*zoom:1;
+}
+/* --------------------------- CONTAINER ------------------------------------ */
+.jardiplus_container{
+	display:none;
+	margin:60px auto 20px auto;
+}
+.jardiplus_container.selected{
+	display:block;
+}
+.jardiplus_container, .prod_featured_desc, .prod_featured_bouton{
+	width:435px;
+}	
+.featured_alt{
+	margin-top:-21px;
+	margin-bottom:20px;
+}
+.prod_featured_img, .prod_featured_desc, .prod_featured_bouton{
+	display:block;
+	margin:0 auto;
+}
+.prod_featured_img{
+	padding:0 0 15px 15px;
+	text-align:center!important;
+	width:260px;
+}
+.prod_featured_bouton{
+	text-align:center!important;
+}
+div.ligne_horizontale_desc{
+	position:absolute;
+	left:0px;
+	top:0px;
+	height:2px;
+	width:320px;
+	margin-bottom:10px;
+	background-color:#fff;
+}
+div.rond_ligne{
+	position:relative;
+	width: 12px;
+	height: 12px;
+	top:-9px;
+	vertical-align:middle;
+	margin: auto;
+	background-color: #fff;
+	border-radius: 50%;
+	border:4px solid #ffefdc;
+}
+.jardiplus_container .title,.jardiplus_container .title a{
+	font-family:'Arimo', sans-serif;
+	text-decoration:none;
+	text-align:center!important;
+	color:#613738;
+	margin:0px 0px 15px 0px;
+}
+.jardiplus_container .title{
+	font-weight:700;
+	font-size:30px;	
+}
+.jardiplus_container .title a{
+	font-weight:700;
+	font-size:20px;	
+}
+.jardiplus_container .bloc_texte{
+	height: 50px;
+	overflow: hidden;
+	font-family:'Arimo', sans-serif;
+	font-weight:400;
+	font-size:15px;
+	text-decoration:none;
+	text-align: center;
+	color:#3d251d;
+}
+.jardiplus_container .bloc_texte .saut-ligne{
+	margin-bottom:10px;
+}
+.jardiplus_gamme .italic, .jardiplus_gamme .italic a{
+	font-style: italic;
+	color:#3d251d;
+	font-size:11px;
+}
+.titre{
+	font-size:12px;
+	font-weight:700;
+	color:#411908;
+	vertical-align:7px;
+}
+.jardiplus_container .bouton_savplus{
+	width:130px;
+	height:20px;
+	padding:5px;
+	margin:5px auto;
+	background: #da5b1f;
+	color: #fff;
+	text-decoration:none;
+	text-transform: none;
+	text-align:center;
+	font-family:'Arimo', sans-serif;
+	font-size:16px;
+	font-weight:700;
+	display:inline-block;*display:inline;*zoom:1;
+}
+/*========================================BANDEAU TERRE===============================================*/
+#bandeau-terre{
+	height:200px;
+	background-image: url(../images/texture_terre2.jpg);
+	background-position: center;
+	background-repeat: repeat;
+	position:relative;
+	overflow: hidden;
+}
+#ombre-haut.pixel-ombre{
+	background-image: url(../images/1px-ombre.png);
+	background-position: 0px -10px;
+	height:50px;
+}
+#ombre-bas.pixel-ombre{
+	background-image: url(../images/1px-ombre-bas.png);
+	background-position: 0px 15px;
+	position:relative;
+	top:120px;
+	height:35px;
+}
+.pixel-ombre{
+	background-repeat: repeat-x;
+	width:991px;
+	height:50px;
+	overflow: hidden;
+}
+/*====================================================================================================*/
+/*====================================BANNIÈRE SITE SOLABIOL===========================================*/
+#banniere_internet{
+	height:184px;
+	top:0px;
+	margin-top:10px;
+	background-image: url(../images/banniere_internet_plan2.jpg);
+	background-position: center;
+	background-repeat: repeat;
+	overflow: hidden;
+}
+#solabiol_minisite .links a{text-transform:uppercase;color:#3D5C36;text-decoration:none;font-weight:bold;font-size:11px}
+#solabiol_minisite .btn{padding:8px 16px;font-family:'Officina_Bold';background:#923736;color:#fff;text-decoration:none;text-transform:uppercase;font-size:16px;display:inline-block;*display:inline;*zoom:1}
+#solabiol_minisite .btn:hover{text-decoration:none}
+#solabiol_minisite .productsRow{padding:0 0 20px 0;border-bottom:1px solid #ddd;margin:20px 0 20px 0}
+#solabiol_minisite .productsRow.last{margin:0;border:none;padding:0}
+#solabiol_minisite .productsRow .prod{float:left;font-size:16px;width:50%}
+#solabiol_minisite .productsRow .prod_alt{float:right}
+#solabiol_minisite .productsRow figure{width:120px;padding-right:15px;float:left}
+#solabiol_minisite .prod figure img{width:120px;border:1px solid #ddd}
+#solabiol_minisite .labelPromo{padding:10px 0}
+.btn_showCat{padding:40px 0 0 0;text-align:center}
+
+
+
+.flexOpSolabiolGamme{
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+.gamme{
+	margin:30px 0px 20px 0px;
+	max-width:400px;
+}
+
+.gamme_gauche{
+	margin-left:100px!important;
+	margin-right:15px!important;
+}
+.gamme_droite{
+	margin-right:100px!important;
+	margin-left:15px!important;
+}
